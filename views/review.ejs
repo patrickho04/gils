@@ -1,0 +1,22 @@
+<% layout('/layouts/boilerplate')%>
+
+<div class="container first-div px-xl-5">
+  <div class="pb-xl-4">
+    <h2 style="width: 50%; display:inline-block">Home > Reviews</h2>
+    <a href="/review/new" class="review-but text-white" style="float:right">Leave a Review</a>
+  </div>
+    <% for (let review of reviews) {%>
+        <div class="card review-card pb-1">
+            <div class="card-body">
+              <h5 class="card-title width-auto"><%= `${review.firstName} ${review.lastName}` %></h5>
+                <div class="star-row">
+                <% for (let i = 0; i < review.rating; i++) {%>
+                    <span style="color: orange">&#9733;</span>
+                <%  }  %>
+                </div>
+              <p class="card-text" style="margin-top: 20px;"><%= review.comment %></p>
+            </div>
+          </div>
+    <% } %>
+</div>
+</html>

@@ -1,0 +1,18 @@
+<% layout('/layouts/boilerplate')%>
+
+<div class="container first-div px-xl-5" id="services">
+    <h2>Home > Services</h2>
+    <div>
+        <% for (const service in serviceData) { %>
+            <a href=<%= `/services/${serviceData[service].url}` %>>
+                <div class="card card-service">
+                    <img class="card-img-top" src=<%= serviceData[service].img %> alt="Radiator">
+                    <div class="card-body border-top">
+                        <h5 class="card-title small"><%= serviceData[service].name%></h5>
+                    </div>
+                </div>
+            </a>
+        <% } %>
+    </div>
+</div>
+</html>
