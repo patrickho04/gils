@@ -10,13 +10,14 @@ const WebError = require('./webError');
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/reviewsDB';
 
 mongoose.connect(dbUrl);
-mongoose.set('strictQuery', true);
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
     console.log("Database connected");
 })
+
+mongoose.set('strictQuery', false);
 
 app.engine('ejs', ejsMate);
 app.set('views', path.join(__dirname, '/views'));
