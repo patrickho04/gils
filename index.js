@@ -28,7 +28,7 @@ app.use(express.json());
 
 app.use('/review', reviewRoutes);
 app.use('/services', serviceRoutes);
-app.get('/home', (req, res) => {
+app.get('/', (req, res) => {
     res.render('home.ejs');
 })
 
