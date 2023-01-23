@@ -6304,6 +6304,10 @@ button.bg-dark:focus {
   display: none !important;
 }
 
+.p-absolute{
+  position: absolute !important;
+}
+
 .d-inline {
   display: inline !important;
 }
@@ -9054,9 +9058,19 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.banner{
+  background-image: url('https://i.imgur.com/NeqpSeU.jpg');
+  width: 100vw;
+  height: 350px;
+}
+
+.banner-title{
+  top: 50% !important;
+  left: 50% !important;
+}
 
 .first-div{
-  padding-top: 10%;
+  padding-top: 3rem;
 }
 
 .half-div{
@@ -9066,7 +9080,6 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0 0;
   padding: 0 0;
 }
-
 
 .rating{
   display: flex;
@@ -9165,6 +9178,10 @@ a.text-dark:hover, a.text-dark:focus {
     width: 85vw !important;
   }
 
+  .banner{
+    height: 250px;
+  }
+
   .carousel-height{
     height: 500px !important;
   }
@@ -9210,10 +9227,6 @@ a.text-dark:hover, a.text-dark:focus {
     display: block;
   }
 
-  .first-div{
-    padding-top: 20%;
-  }
-
   .card-service{
     display: inline-block;
     width: 49%;
@@ -9223,10 +9236,15 @@ a.text-dark:hover, a.text-dark:focus {
 @media (max-width: 818px){
   *{
     font-size: 1rem;
+    max-width: 100vw;
   }
 
   p{
     width: 85vw;
+  }
+
+  .banner{
+    height: 200px;
   }
 
   .carousel-height{
@@ -9268,10 +9286,6 @@ a.text-dark:hover, a.text-dark:focus {
   #philo{
     margin-left: 0;
     display: block;
-  }
-
-  .first-div{
-    padding-top: 25%;
   }
 
   .card-service{

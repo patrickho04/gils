@@ -1,9 +1,18 @@
 <% layout('/layouts/boilerplate')%>
 
+<div class="banner container">
+  <div class="row align-items-center h-100">
+      <div class="col-6 mx-auto">
+          <div class="text-center text-white">
+              <h4>About Us > Reviews</h4>
+          </div>
+      </div>
+  </div>
+</div>
+
 <div class="container first-div px-xl-5">
-  <div class="pb-xl-4">
-    <h2 style="width: 50%; display:inline-block">Home > Reviews</h2>
-    <a href="/review/new" class="review-but text-white" style="float:right">Leave a Review</a>
+  <div class="pb-xl-5">
+    <a href="/review/new" class="review-but text-white" style="float:left">Leave a Review</a><br>
   </div>
     <% for (let review of reviews) {%>
         <div class="card review-card pb-1">

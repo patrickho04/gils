@@ -1,7 +1,16 @@
 <% layout('/layouts/boilerplate')%>
 
+<div class="banner container">
+    <div class="row align-items-center h-100">
+        <div class="col-6 mx-auto">
+            <div class="text-center text-white">
+                <h4>Home > Services</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container first-div px-xl-5" id="services">
-    <h2>Home > Services</h2>
     <div>
         <% for (const service in serviceData) { %>
             <a href=<%= `/services/${serviceData[service].url}` %>>
