@@ -3882,14 +3882,15 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   margin-left: 30px;
+  transition: .2s;
 }
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
-  background-color: white;
   color: black !important;
+  background-color: white;
 }
 
 .nav-link.disabled {
