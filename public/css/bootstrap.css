@@ -555,7 +555,6 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: white;
 }
 
 @media (min-width: 576px) {
@@ -3977,6 +3976,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  background-image: linear-gradient(to right, #000080, #2A548D)
 }
 
 .navbar > .container,
@@ -9058,19 +9058,19 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-.banner{
+/* .banner{
   background-image: url('https://i.imgur.com/NeqpSeU.jpg');
   width: 100vw;
   height: 350px;
+} */
+
+.banner{
+  background-image: linear-gradient(to right, #000080, #2A548D);
+  height: auto;
 }
 
 .banner-title{
-  top: 50% !important;
-  left: 50% !important;
-}
-
-.first-div{
-  padding-top: 3rem;
+  font-size: 3rem;
 }
 
 .half-div{
@@ -9125,7 +9125,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .service-desc{
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .star-row{
@@ -9136,13 +9136,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 #about-us-pic{
   width: 49%;
-}
-
-#philo{
-  width:50%; 
-  display: inline-block; 
-  vertical-align: top; 
-  margin-left: 9%;
 }
 
 #comment{
@@ -9169,17 +9162,13 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .object-fit{
-  height: 450px;
+  height: 400px;
   object-fit: scale-down !important;
 }
 
 @media (max-width: 990px) and (min-width: 819px){
   p{
     width: 85vw !important;
-  }
-
-  .banner{
-    height: 250px;
   }
 
   .carousel-height{
@@ -9222,11 +9211,6 @@ a.text-dark:hover, a.text-dark:focus {
     width: 40%;
   }
 
-  #philo{
-    margin-left: 0;
-    display: block;
-  }
-
   .card-service{
     display: inline-block;
     width: 49%;
@@ -9243,8 +9227,8 @@ a.text-dark:hover, a.text-dark:focus {
     width: 85vw;
   }
 
-  .banner{
-    height: 200px;
+  .banner-title{
+    font-size: 2.4rem;
   }
 
   .carousel-height{
@@ -9281,11 +9265,6 @@ a.text-dark:hover, a.text-dark:focus {
 
   #logo{
     width: 50%;
-  }
-
-  #philo{
-    margin-left: 0;
-    display: block;
   }
 
   .card-service{

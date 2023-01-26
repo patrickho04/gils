@@ -1,16 +1,21 @@
 <% layout('/layouts/boilerplate')%>
 
-<div class="banner container">
-    <div class="row align-items-center h-100">
-        <div class="col-6 mx-auto">
-            <div class="text-center text-white">
-                <h4>Home > Services</h4>
-            </div>
+<div class="banner">
+    <div class="container px-xl-5 py-xl-5" id="home">
+        <div class="w-50 d-inline-block py-xl-4">
+            <h1 class="banner-title text-white">Services</h1>
+            <p class="text-white">
+                Over the years we have expanded on our technique. 
+                As technology advanced, we kept up with it to make sure we could fix anything.
+            </p>
         </div>
+        <img src="https://i.imgur.com/l8ijGdi.png" width="35%" id="red-car" class="pl-xl-5 align-top ml-xl-5">
     </div>
+
+    <img src="https://i.imgur.com/YPJ95dC.png" class="w-100">
 </div>
 
-<div class="container first-div px-xl-5" id="services">
+<div class="container py-xl-5 px-xl-5" id="services">
     <div>
         <% for (const service in serviceData) { %>
             <a href=<%= `/services/${serviceData[service].url}` %>>
