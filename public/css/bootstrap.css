@@ -4395,6 +4395,7 @@ input[type="button"].btn-block {
   display: inline-block;
   text-align: center;
   margin-top: 5px;
+  transition: 0.3s;
 }
 
 .card-service:hover{
