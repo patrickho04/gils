@@ -20,8 +20,8 @@
         <% for (const service in serviceData) { %>
             <a href=<%= `/services/${serviceData[service].url}` %>>
                 <div class="card card-service">
-                    <img class="card-img-top" src=<%= serviceData[service].img %> alt="Radiator">
-                    <div class="card-body border-top">
+                    <img class="card-img-top w-100" src=<%= serviceData[service].img %> alt="Radiator">
+                    <div class="card-body">
                         <h5 class="card-title small"><%= serviceData[service].name%></h5>
                     </div>
                 </div>
